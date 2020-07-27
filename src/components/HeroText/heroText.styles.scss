@@ -1,0 +1,25 @@
+.introduction {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  max-width: 550px;
+  color: white;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: none;
+  }
+  button:last-child {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+
+  div {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    img {
+      width: 100px;
+      height: 100px;
+      transform: rotate(-30deg);
+    }
+    label {
+      color: white;
+      align-items: center;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    li {
+      list-style-type: none;
+      color: white;
+      margin: 10px 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 20px;
+    }
+  }
+}

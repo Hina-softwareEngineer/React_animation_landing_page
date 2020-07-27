@@ -1,11 +1,23 @@
 .overlay {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 110vh;
   overflow: hidden;
+  background-image: url(./image/curve.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
 }
 
-.overlay img {
+.image {
+  width: 850px;
+  height: inherit;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+.image > img {
   width: inherit;
   height: inherit;
-  animation: run 2s linear 0s infinite;
 }
