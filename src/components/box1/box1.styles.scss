@@ -1,0 +1,47 @@
+#woman {
+  animation-name: up-down;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+  padding: 10px 100px;
+  max-width: 1200px;
+
+  .girlImage {
+    width: 500px;
+    padding: 10px 20px;
+  }
+
+  .info {
+    padding: 20px 70px;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    li {
+      font-size: 18px;
+      list-style-type: none;
+    }
+  }
+}

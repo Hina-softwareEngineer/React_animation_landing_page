@@ -1,0 +1,28 @@
+#headGirl {
+  animation: move 2s alternate 1s linear infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(6deg) translateY(-3px);
+  }
+}
+
+#handGirl {
+  animation: handGirl 2s alternate 1s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes handGirl {
+  0% {
+    transform: rotateY(-2deg) translate(-1px);
+  }
+  100% {
+    transform: rotateY(0deg) translate(1px);
+  }
+}

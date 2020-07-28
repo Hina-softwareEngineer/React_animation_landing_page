@@ -1,0 +1,67 @@
+#head {
+  animation: head 0.5s alternate 3s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes head {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  100% {
+    transform: rotate(5deg) translateY(4px);
+  }
+}
+
+#hand {
+  animation: hand 0.5s alternate 0s linear infinite;
+  transform-origin: bottom;
+}
+
+@keyframes hand {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(3deg) translateY(-2px);
+  }
+}
+
+@keyframes head {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  100% {
+    transform: rotate(5deg) translateY(4px);
+  }
+}
+
+#largeSpin,
+#smallSpin {
+  animation: spin 2s forwards 0s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  background-origin: content-box;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#graph {
+  animation: fade 2s forwards 1s linear infinite;
+  transform-origin: left;
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
