@@ -1,10 +1,34 @@
 import React from "react";
 import "./box2.style.scss";
 
+import useWebAnimations, { backInRight } from "@wellyshen/use-web-animations";
+
 const Box2 = () => {
+  const { keyframes, timing } = backInRight;
+  const { ref } = useWebAnimations({
+    keyframes,
+    timing: {
+      ...timing,
+      delay: 1500,
+      duration: timing.duration * 2,
+    },
+  });
   return (
     <div className="box">
+      <div className="info">
+        <h1>Website Copywriting</h1>
+        <p>
+          our website is a dialogue with your audience. I capture the essence of
+          your business and communicate it clearly. Carefully considered writing
+          and SEO best practices allow me to craft the perfect user journey
+          online. Let me draw the map that guides users every step of the way
+          from discovery, to consideration, to conversion.
+        </p>
+
+        <button>Read more</button>
+      </div>
       <div
+        ref={ref}
         className="girlImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="504" height="501" viewBox="0 0 504 501" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,17 +156,6 @@ const Box2 = () => {
           </svg>`,
         }}
       />
-
-      <div className="info">
-        <h1>Website Copywriting</h1>
-        <p>
-          our website is a dialogue with your audience. I capture the essence of
-          your business and communicate it clearly. Carefully considered writing
-          and SEO best practices allow me to craft the perfect user journey
-          online. Let me draw the map that guides users every step of the way
-          from discovery, to consideration, to conversion.
-        </p>
-      </div>
     </div>
   );
 };

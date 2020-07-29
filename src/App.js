@@ -7,6 +7,7 @@ import useWebAnimations from "@wellyshen/use-web-animations";
 import Navbar from "./components/Navbar/navbar.component";
 import HeroText from "./components/HeroText/heroText.component";
 import Containers from "./components/containers/containers.component";
+import Footer from "./components/Footer/footer.component";
 
 function App() {
   const { ref } = useWebAnimations({
@@ -33,6 +34,8 @@ function App() {
       <HeroText />
 
       <Containers />
+
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,24 @@
 import React from "react";
 import "./box1.styles.scss";
 
+import useWebAnimations, {
+  lightSpeedInLeft,
+} from "@wellyshen/use-web-animations";
+
 const Box1 = () => {
+  const { keyframes, timing } = lightSpeedInLeft;
+  const { ref } = useWebAnimations({
+    keyframes,
+    timing: {
+      ...timing,
+      delay: 1000,
+      duration: timing.duration * 2,
+    },
+  });
   return (
     <div className="box">
       <div
+        ref={ref}
         className="girlImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="501" height="491" viewBox="0 0 501 491" fill="none" xmlns="http://www.w3.org/2000/svg">

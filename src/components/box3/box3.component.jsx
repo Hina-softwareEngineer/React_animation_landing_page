@@ -1,10 +1,21 @@
 import React from "react";
 import "./box3.style.scss";
+import useWebAnimations, { fadeInLeft } from "@wellyshen/use-web-animations";
 
 const Box3 = () => {
+  const { keyframes, timing } = fadeInLeft;
+  const { ref } = useWebAnimations({
+    keyframes,
+    timing: {
+      ...timing,
+      delay: 2000,
+      duration: timing.duration * 2,
+    },
+  });
   return (
     <div className="box">
       <div
+        ref={ref}
         className="girlImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="503" height="500" viewBox="0 0 503 500" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,8 +53,9 @@ const Box3 = () => {
           <path id="Vector_26" opacity="0.1" d="M247.212 232.356H200.696C198.386 232.356 196.514 234.288 196.514 236.67V236.686C196.514 239.068 198.386 240.999 200.696 240.999H247.212C249.522 240.999 251.394 239.068 251.394 236.686V236.67C251.394 234.288 249.522 232.356 247.212 232.356Z" fill="#020202"/>
           <path id="Vector_27" opacity="0.1" d="M247.212 249.502H200.696C198.386 249.502 196.514 251.433 196.514 253.815V253.831C196.514 256.213 198.386 258.144 200.696 258.144H247.212C249.522 258.144 251.394 256.213 251.394 253.831V253.815C251.394 251.433 249.522 249.502 247.212 249.502Z" fill="#020202"/>
           <path id="Vector_28" opacity="0.1" d="M247.212 266.647H200.696C198.386 266.647 196.514 268.578 196.514 270.96V270.976C196.514 273.358 198.386 275.29 200.696 275.29H247.212C249.522 275.29 251.394 273.358 251.394 270.976V270.96C251.394 268.578 249.522 266.647 247.212 266.647Z" fill="#020202"/>
-          <g id="graphMobile">
           <path id="Vector_29" d="M374.185 222.079H269.648C265.412 222.079 261.978 225.62 261.978 229.989V301.732C261.978 306.101 265.412 309.642 269.648 309.642H374.185C378.421 309.642 381.855 306.101 381.855 301.732V229.989C381.855 225.62 378.421 222.079 374.185 222.079Z" fill="white"/>
+          <g id="graphMobile">
+          
           <path id="Vector_30" d="M363.526 297.543H280.307V234.178H281.816V295.985H363.526V297.543Z" fill="#981D93"/>
           <path id="Vector_31" d="M281.288 274.776L280.503 273.436L301.489 260.138L332.334 265.059L359.586 248.832L360.34 250.171L332.621 266.678L332.364 266.631L301.806 261.757L281.288 274.776Z" fill="#AF37CD"/>
           <path id="Vector_32" d="M302.576 264.498C304.394 264.498 305.867 262.978 305.867 261.103C305.867 259.228 304.394 257.708 302.576 257.708C300.758 257.708 299.285 259.228 299.285 261.103C299.285 262.978 300.758 264.498 302.576 264.498Z" fill="#EF26C3"/>
@@ -79,6 +91,7 @@ const Box3 = () => {
           eDMs, and case studies will help you implement a plan that maximizes
           your business’s online exposure.
         </p>
+        <button>Read more</button>
       </div>
     </div>
   );

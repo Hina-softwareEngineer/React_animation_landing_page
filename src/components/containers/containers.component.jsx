@@ -8,6 +8,7 @@ import Card from "../card/card.component";
 import Box1 from "../box1/box1.component";
 import Box2 from "../box2/box2.component";
 import Box3 from "../box3/box3.component";
+import News from "../NewsCard/news.component";
 
 const Containers = () => {
   return (
@@ -33,6 +34,18 @@ const Containers = () => {
       <Box1 />
       <Box2 />
       <Box3 />
+
+      <h1>Latest News</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
+        dolorem aut illum .
+      </p>
+
+      <div>
+        <News />
+        <News />
+        <News />
+      </div>
     </div>
   );
 };
