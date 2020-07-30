@@ -6,3 +6,10 @@
   justify-content: space-between;
   padding: 0px 20px;
 }
+
+.newsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}

@@ -41,10 +41,21 @@ const Containers = () => {
         dolorem aut illum .
       </p>
 
-      <div>
-        <News />
-        <News />
-        <News />
+      <div className="newsContainer">
+        <News
+          image="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
+          heading="Your web presence just got so much better"
+        />
+        <News
+          image="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9"
+          heading="Scalable extended
+          business office
+          services"
+        />
+        <News
+          image="https://cdn.pixabay.com/photo/2018/02/27/06/30/skyscraper-3184798_960_720.jpg"
+          heading="The blockchain platform for real money, assets,"
+        />
       </div>
     </div>
   );

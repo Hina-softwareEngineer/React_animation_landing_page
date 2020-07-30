@@ -1,12 +1,15 @@
 import React from "react";
 import "./news.style.scss";
 
-const News = () => {
+const News = ({ image, heading }) => {
   return (
-    <div>
-      <img src="" alt="" />
-      <label>dated 0</label>
-      <h2>Heading 2</h2>
+    <div className="news">
+      <img src={image} alt="" />
+      <label>
+        <span>August 1, 2020</span>
+        <span>0 likes</span>
+      </label>
+      <h2>{heading}</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam vel
         harum exercitationem ipsum iusto velit dicta quod suscipit officiis, aut

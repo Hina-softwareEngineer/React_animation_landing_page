@@ -1,0 +1,55 @@
+.footer {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+
+  li {
+    list-style-type: none;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .logos,
+  .imp,
+  .useful,
+  .subscribe {
+    width: 310px;
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  .logos {
+    text-align: center;
+    .brand {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      margin: 10px 0;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    div {
+      span {
+        margin: 0px 5px;
+        border: 2px solid red;
+        font-size: 34px;
+        padding: 10px 13px;
+        border-radius: 50%;
+        svg {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
