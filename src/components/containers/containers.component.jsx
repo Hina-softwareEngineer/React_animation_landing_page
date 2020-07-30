@@ -12,7 +12,7 @@ import News from "../NewsCard/news.component";
 
 const Containers = () => {
   return (
-    <div>
+    <div className="container">
       <div className="cards">
         <Card
           img={icon}
@@ -35,8 +35,8 @@ const Containers = () => {
       <Box2 />
       <Box3 />
 
-      <h1>Latest News</h1>
-      <p>
+      <h1 className="latest-news">Latest News</h1>
+      <p className="paragraph">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
         dolorem aut illum .
       </p>
