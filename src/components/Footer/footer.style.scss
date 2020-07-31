@@ -3,10 +3,12 @@
   display: flex;
   justify-content: space-around;
   font-size: 16px;
+  padding: 100px;
+  border: 2px solid red;
 
   li {
     list-style-type: none;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 
   .logos,
@@ -14,13 +16,18 @@
   .useful,
   .subscribe {
     width: 310px;
+    padding: 0px 20px;
 
     h3 {
       font-size: 2rem;
+      margin-bottom: 50px;
     }
   }
 
   .subscribe {
+    p {
+      margin: 25px 0;
+    }
     input {
       width: 300px;
       font-size: 20px;
@@ -38,6 +45,7 @@
 
   .logos {
     text-align: center;
+
     .brand {
       display: flex;
       align-items: center;
@@ -46,10 +54,6 @@
         font-size: 2.5rem;
       }
     }
-
-    p {
-      margin: 10px 0;
-    }
     img {
       width: 100px;
       height: 100px;
@@ -57,13 +61,13 @@
 
     div {
       span {
-        margin: 0px 5px;
+        margin: 0 5px;
         border: 2px solid red;
-        font-size: 34px;
-        padding: 10px 13px;
+        font-size: 24px;
+        padding: 10px 11px;
         border-radius: 50%;
         svg {
-          font-size: 28px;
+          font-size: 22px;
         }
       }
     }

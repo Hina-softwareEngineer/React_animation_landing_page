@@ -1,12 +1,26 @@
 .news {
-  width: 400px;
+  width: 350px;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  overflow: hidden;
 
   img {
     width: inherit;
     height: 300px;
   }
-  label {
-    display: flex;
-    justify-content: space-between;
+  .infoBox {
+    padding: 30px;
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: grey;
+    }
+
+    p {
+      color: grey;
+    }
   }
 }
