@@ -43,6 +43,23 @@
   background-origin: content-box;
 }
 
+.readMore {
+  margin: 30px 0;
+  padding: 20px 35px;
+  color: white;
+  font-weight: bolder;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(155, 5, 155);
+}
+
+.readMore:hover {
+  background-color: rgb(226, 40, 226);
+  box-shadow: 2px 2px 25px rgb(235, 158, 235);
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);

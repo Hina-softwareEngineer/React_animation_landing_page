@@ -25,7 +25,7 @@ const Box2 = () => {
           from discovery, to consideration, to conversion.
         </p>
 
-        <button>Read more</button>
+        <button className="readMore">Read more</button>
       </div>
       <div
         ref={ref}

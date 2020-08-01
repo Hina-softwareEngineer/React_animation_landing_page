@@ -10,7 +10,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footerContainer">
       <div className="footer">
         <div className="logos">
           <div className="brand">

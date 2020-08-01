@@ -4,7 +4,7 @@ import "./heroText.styles.scss";
 const HeroText = () => {
   return (
     <div className="introduction">
-      <h1>Your Web Presence just got so much beter</h1>
+      <h1>Your Web Presence just got so much better</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever

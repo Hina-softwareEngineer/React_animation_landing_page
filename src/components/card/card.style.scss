@@ -2,14 +2,23 @@
   text-align: center;
   margin: 5px 20px;
   padding: 50px 30px;
-  border: 2px solid lightgray;
-  box-shadow: 4px 4px 20px grey;
+  transition: all 0.8s linear 0s;
+  border: 1px solid white;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgb(235, 232, 232);
+    box-shadow: 4px 4px 20px lightgrey;
+  }
 
   h2 {
     font-size: 1.4em;
+    &:hover {
+      color: rgb(214, 5, 214);
+    }
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

@@ -91,7 +91,7 @@ const Box3 = () => {
           eDMs, and case studies will help you implement a plan that maximizes
           your business’s online exposure.
         </p>
-        <button>Read more</button>
+        <button className="readMore">Read more</button>
       </div>
     </div>
   );

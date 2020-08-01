@@ -29,10 +29,28 @@
       list-style-type: none;
       color: white;
       margin: 10px 20px;
+      font-weight: bolder;
+      padding: 5px 0;
+      transition: all 0.8s linear 0s;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: 2px solid white;
+      }
     }
     button {
-      padding: 10px 20px;
+      padding: 10px 15px;
       margin-left: 20px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      font-weight: bolder;
+      color: rgb(201, 7, 201);
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

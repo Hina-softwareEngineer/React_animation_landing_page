@@ -10,14 +10,28 @@
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
+    color: white;
   }
 
   button {
-    font-size: 20px;
-    padding: 15px 20px;
+    margin: 25px 0;
+    font-size: 16px;
+    padding: 20px 40px;
     border-radius: 50px;
-    border: none;
+    border: 2px solid transparent;
+    background-color: white;
+    color: purple;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out 0s;
+
+    &:hover {
+      outline: none;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
   }
   button:last-child {
     margin-left: 15px;
