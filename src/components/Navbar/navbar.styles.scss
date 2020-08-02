@@ -54,3 +54,9 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: none !important;
+  }
+}

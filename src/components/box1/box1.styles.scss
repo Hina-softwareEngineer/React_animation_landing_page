@@ -16,6 +16,17 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .box {
+    flex-wrap: wrap;
+    padding: 10px !important;
+
+    .info {
+      padding: 20px 10px !important;
+    }
+  }
+}
+
 .box {
   display: flex;
   justify-content: space-around;

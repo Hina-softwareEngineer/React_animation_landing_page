@@ -82,3 +82,13 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .girlImage {
+    overflow: hidden;
+
+    svg {
+      transform: scale(0.6) translateX(-40%);
+    }
+  }
+}
