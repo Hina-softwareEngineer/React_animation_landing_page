@@ -1,8 +1,11 @@
 import React from "react";
 import "./box1.styles.scss";
 
+import path1 from "../../image/path2.svg";
+
 import useWebAnimations, {
   lightSpeedInLeft,
+  jello,
 } from "@wellyshen/use-web-animations";
 
 const Box1 = () => {
@@ -15,6 +18,10 @@ const Box1 = () => {
       duration: timing.duration * 2,
     },
   });
+
+  const { keyf, timin } = jello;
+
+  const { refHover } = useWebAnimations({ keyf, timin });
   return (
     <div className="box">
       <div
@@ -165,6 +172,8 @@ const Box1 = () => {
         <li>Design Principles</li>
         <li>Prototype</li>
       </div>
+
+      <img className="path2" src={path1} alt="path2" />
     </div>
   );
 };

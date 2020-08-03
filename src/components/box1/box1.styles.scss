@@ -24,6 +24,14 @@
     .info {
       padding: 20px 10px !important;
     }
+
+    .path2 {
+      display: none;
+    }
+
+    .path1 {
+      display: none;
+    }
   }
 }
 
@@ -34,9 +42,18 @@
   padding: 10px 100px;
   max-width: 1200px;
 
+  position: relative;
   .girlImage {
     width: 500px;
     padding: 10px 20px;
+  }
+
+  .path2 {
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    width: 300px;
+    height: 300px;
   }
 
   .info {

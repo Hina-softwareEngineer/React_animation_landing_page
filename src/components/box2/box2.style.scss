@@ -3,6 +3,17 @@
   transform-origin: center;
 }
 
+.box {
+  position: relative;
+
+  .path1 {
+    position: absolute;
+    bottom: -60%;
+    left: -10%;
+    z-index: -1;
+  }
+}
+
 @keyframes head {
   0% {
     transform: rotate(0deg) translateY(0);
@@ -84,11 +95,23 @@
 }
 
 @media screen and (max-width: 800px) {
+  .box {
+    margin: 10px 0;
+  }
   .girlImage {
     overflow: hidden;
 
     svg {
-      transform: scale(0.6) translateX(-40%);
+      transform: scale(0.6) translateX(-35%);
+    }
+  }
+
+  .laptopImage {
+    width: 300px;
+    height: 300px;
+    margin-top: -100px;
+    svg {
+      transform: scale(0.5) translateX(-40%);
     }
   }
 }

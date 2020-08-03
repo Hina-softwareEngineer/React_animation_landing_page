@@ -1,6 +1,8 @@
 import React from "react";
 import "./box2.style.scss";
 
+import path from "../../image/path1.svg";
+
 import useWebAnimations, { backInRight } from "@wellyshen/use-web-animations";
 
 const Box2 = () => {
@@ -29,7 +31,7 @@ const Box2 = () => {
       </div>
       <div
         ref={ref}
-        className="girlImage"
+        className="laptopImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="504" height="501" viewBox="0 0 504 501" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g id="3 1" clip-path="url(#clip0)">
@@ -156,6 +158,8 @@ const Box2 = () => {
           </svg>`,
         }}
       />
+
+      <img className="path1" src={path} alt="path" />
     </div>
   );
 };
