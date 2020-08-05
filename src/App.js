@@ -33,7 +33,7 @@ function App() {
           onMouseEnter={() => getAnimation().pause()}
           onMouseOut={() => getAnimation().play()}
           src={MainImg}
-          alt="Illustrated Image"
+          alt="Illustrated svg"
         />
       </div>
       <Navbar />
