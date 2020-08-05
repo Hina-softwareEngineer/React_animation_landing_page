@@ -1,9 +1,21 @@
 import React from "react";
 import "./news.style.scss";
 
+import useWebAnimations, { jello } from "@wellyshen/use-web-animations";
+
 const News = ({ image, heading }) => {
+  const { keyframes, timing } = jello;
+  const { ref, getAnimation } = useWebAnimations({
+    keyframes,
+    timing: {
+      ...timing,
+      delay: 0,
+      duration: timing.duration * 2,
+    },
+  });
+
   return (
-    <div className="news">
+    <div className="news" onMouseOver={() => getAnimation().play()} ref={ref}>
       <img src={image} alt="" />
       <div className="infoBox">
         <label>

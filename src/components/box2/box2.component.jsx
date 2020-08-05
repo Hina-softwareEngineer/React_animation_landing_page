@@ -3,15 +3,16 @@ import "./box2.style.scss";
 
 import path from "../../image/path1.svg";
 
-import useWebAnimations, { backInRight } from "@wellyshen/use-web-animations";
+import useWebAnimations, { flip } from "@wellyshen/use-web-animations";
 
 const Box2 = () => {
-  const { keyframes, timing } = backInRight;
-  const { ref } = useWebAnimations({
+  const { keyframes, timing } = flip;
+  const { ref, getAnimation } = useWebAnimations({
     keyframes,
     timing: {
       ...timing,
-      delay: 1500,
+      delay: 0,
+      iterations: 1,
       duration: timing.duration * 2,
     },
   });
@@ -31,6 +32,7 @@ const Box2 = () => {
       </div>
       <div
         ref={ref}
+        onMouseEnter={() => getAnimation().play()}
         className="laptopImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="504" height="501" viewBox="0 0 504 501" fill="none" xmlns="http://www.w3.org/2000/svg">

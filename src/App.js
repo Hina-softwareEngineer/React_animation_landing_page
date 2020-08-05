@@ -10,7 +10,7 @@ import Containers from "./components/containers/containers.component";
 import Footer from "./components/Footer/footer.component";
 
 function App() {
-  const { ref } = useWebAnimations({
+  const { ref, getAnimation } = useWebAnimations({
     keyframes: [
       { transform: "translateY(-25px)" },
       { transform: "translateY(75px)" },
@@ -28,7 +28,13 @@ function App() {
     <div className="App">
       <div className="overlay"></div>
       <div className="image">
-        <img ref={ref} src={MainImg} alt="Illustrated Image" />
+        <img
+          ref={ref}
+          onMouseEnter={() => getAnimation().pause()}
+          onMouseOut={() => getAnimation().play()}
+          src={MainImg}
+          alt="Illustrated Image"
+        />
       </div>
       <Navbar />
       <HeroText />

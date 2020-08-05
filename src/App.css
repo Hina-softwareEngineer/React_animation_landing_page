@@ -28,6 +28,7 @@ p {
 
 .image > img {
   width: inherit;
+  cursor: pointer;
   height: inherit;
 }
 

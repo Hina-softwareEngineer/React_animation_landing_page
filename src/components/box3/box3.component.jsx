@@ -1,14 +1,14 @@
 import React from "react";
 import "./box3.style.scss";
-import useWebAnimations, { fadeInLeft } from "@wellyshen/use-web-animations";
+import useWebAnimations, { zoomIn } from "@wellyshen/use-web-animations";
 
 const Box3 = () => {
-  const { keyframes, timing } = fadeInLeft;
-  const { ref } = useWebAnimations({
+  const { keyframes, timing } = zoomIn;
+  const { ref, getAnimation } = useWebAnimations({
     keyframes,
     timing: {
       ...timing,
-      delay: 2000,
+      delay: 0,
       duration: timing.duration * 2,
     },
   });
@@ -16,6 +16,7 @@ const Box3 = () => {
     <div className="box">
       <div
         ref={ref}
+        onMouseOver={() => getAnimation().play()}
         className="girlImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="503" height="500" viewBox="0 0 503 500" fill="none" xmlns="http://www.w3.org/2000/svg">

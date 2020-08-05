@@ -3,29 +3,23 @@ import "./box1.styles.scss";
 
 import path1 from "../../image/path2.svg";
 
-import useWebAnimations, {
-  lightSpeedInLeft,
-  jello,
-} from "@wellyshen/use-web-animations";
+import useWebAnimations, { tada } from "@wellyshen/use-web-animations";
 
 const Box1 = () => {
-  const { keyframes, timing } = lightSpeedInLeft;
-  const { ref } = useWebAnimations({
+  const { keyframes, timing } = tada;
+  const { ref, getAnimation } = useWebAnimations({
     keyframes,
     timing: {
       ...timing,
-      delay: 1000,
       duration: timing.duration * 2,
     },
   });
 
-  const { keyf, timin } = jello;
-
-  const { refHover } = useWebAnimations({ keyf, timin });
   return (
     <div className="box">
       <div
         ref={ref}
+        onMouseOver={() => getAnimation().play()}
         className="girlImage"
         dangerouslySetInnerHTML={{
           __html: `<svg width="501" height="491" viewBox="0 0 501 491" fill="none" xmlns="http://www.w3.org/2000/svg">
